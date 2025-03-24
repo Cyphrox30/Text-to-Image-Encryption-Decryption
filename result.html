@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decryption Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #00c6ff;
+        }
+
+        .decrypted-text {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            font-size: 16px;
+            background: white;
+            color: black;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #00c6ff;
+            color: white;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #0072ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔓 Decryption Successful!</h2>
+        <textarea class="decrypted-text" rows="4" readonly>{{ decrypted_text }}</textarea>
+        <a href="/" class="btn">⬅️ Back to Home</a>
+    </div>
+</body>
+</html>
+
